@@ -13,6 +13,24 @@ body {
 
 /* Header */
 
+.header {
+    position: relative;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: -200px;
+    left: 0;
+    right: 0;
+    background-image: url("../images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+    z-index: -1;
+}
+
 .header__nav {
     padding: 50px 60px;
     display: flex;
@@ -61,6 +79,12 @@ body {
     background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
     border: 0;
     border-radius: 20px;
+}
+
+/* Container */
+
+.l-container {
+    background-color: hsl(218, 28%, 13%);
 }
 
 /* Feature */
@@ -138,18 +162,32 @@ body {
 }
 
 .productivity__reviews {
-    margin: 100px auto;
+    position: relative;
+    margin: 100px auto 50px;
     max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0 30px;    
+}
 
+.productivity__reviews::before {
+    content: "";
+    position: absolute;
+    top: -35px;
+    left: -10px;
+    right: 0;
+    bottom: 0;
+    background-image: url("../images/bg-quotes.png");
+    background-repeat: no-repeat;
+    z-index: 0;
 }
 
 .productivity__review {
+    position: relative;
     padding: 30px;
     background-color: hsl(219, 30%, 18%);
     border-radius: 5px;
+    z-index: 1;
 }
 
 .productivity__content {
@@ -183,6 +221,8 @@ body {
 /* Access */
 
 .access {
+    position: relative;
+    top: 80px;
     margin: 0 auto;
     max-width: 800px;
     padding: 40px;
@@ -229,13 +269,11 @@ body {
 /* Footer */
 
 .footer {
-    padding: 100px 60px 60px;
+    padding: 130px 60px 60px;
     background-color: hsl(216, 53%, 9%);
 }
 
 .footer__grid {
-    /* max-width: 1200px;
-    margin: auto auto; */
     margin: 30px 0;
     display: grid;
     grid-template-columns: 300px repeat(4, 1fr);
