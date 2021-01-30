@@ -5,5 +5,62 @@
 }
 
 body {
-    
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(217, 28%, 15%);
+}
+
+.header {
+
+}
+
+.header__nav {
+    padding: 50px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__item {
+    margin-left: 60px;
+}
+
+.header__link {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.header__hero {
+    text-align: center;
+}
+
+.header__title {
+    margin: 20px auto;
+    max-width: 650px;
+    font-size: 36px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.header__desc {
+    margin: 20px auto;
+    max-width: 450px;
+    line-height: 1.5;
+
+}
+
+.header__cta {
+    padding: 12px 60px;
+    color: hsl(0, 0%, 100%);
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    border: 0;
+    border-radius: 20px;
 }
