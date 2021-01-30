@@ -11,6 +11,8 @@ body {
     background-color: hsl(217, 28%, 15%);
 }
 
+/* Header */
+
 .header {
 
 }
@@ -63,4 +65,37 @@ body {
     background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
     border: 0;
     border-radius: 20px;
+}
+
+/* Feature */
+
+.feature {
+    margin: 120px auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+}
+
+.feature__card {
+    text-align: center;
+}
+
+.feature__image {
+    width: 60px;
+    height: auto;
+}
+
+.feature__image--security {
+    width: 45px;
+}
+
+.feature__title {
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.feature__desc {
+    line-height: 1.5;
 }
