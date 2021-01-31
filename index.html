@@ -189,9 +189,12 @@
         It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
         questions, our support team would be happy to help you.
       </p>
-      <form class="access__form" novalidate>
-        <input class="access__email" type="email" placeholder="email@example.com">
-        <button class="access__submit">Get Started For Free</button>
+      <form class="access__form js-form" novalidate>
+        <div>
+          <input class="access__email js-email" type="email" placeholder="email@example.com">
+          <button class="access__submit">Get Started For Free</button>
+        </div>
+        <p class="access__error js-error hidden">Please enter a valid email</p>
       </form>
     </section>
   </main>
@@ -293,7 +296,7 @@
       </p>
     </div>
   </footer>
-
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

@@ -302,6 +302,17 @@ body {
     background-image: none;
 }
 
+.access__error {
+    margin-top: 15px;
+    margin-left: 80px;
+    text-align: left;
+    color: hsl(0, 100%, 63%);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
 /* Footer */
 
 .footer {
@@ -524,6 +535,10 @@ body {
         margin-top: 20px;
         margin-left: 0;
         width: 100%;
+    }
+
+    .access__error {
+        margin-left: 0;
     }
 
 }
