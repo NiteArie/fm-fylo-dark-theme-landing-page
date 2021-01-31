@@ -128,6 +128,15 @@ body {
     display: flex;
 }
 
+.productivity__intro {
+    flex: 1;
+}
+
+.productivity__illustration {
+    width: 100%;
+    height: auto;
+}
+
 .productivity__info {
     margin-top: 50px;
     margin-left: 30px;
@@ -333,4 +342,162 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media all and (max-width: 1200px) {
+    .productivity__reviews {
+        max-width: 500px;
+        grid-template-columns: 1fr;
+    }
+    
+    .productivity__review {
+        margin-bottom: 20px;
+    }
+
+    .footer__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .footer__list {
+        display: flex;
+    }
+
+    .footer__desc {
+        max-width: 300px;
+    }
+
+    .footer__item {
+        margin-right: 30px;
+    }
+}
+
+@media all and (max-width: 850px) {
+
+    
+    .header::after {
+        bottom: -120px;
+        background-image: url("../images/bg-curvy-mobile.svg");
+        background-position: bottom left;
+        background-size: contain;
+    }
+
+    .header__logo {
+        width: 90px;
+    }
+
+    .header__nav {
+        padding: 20px;
+    }
+
+    .header__item {
+        margin-left: 30px;
+    }
+
+    .header__intro {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px;   
+        padding: 20px;
+    }
+
+    .header__illustration {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Feature */
+
+    .feature {
+        grid-template-columns: 1fr;
+    }
+
+    .feature__desc {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
+    }
+
+    /* Productivity */
+
+    .productivity__welcome {
+        display: block;
+    }
+
+    .productivity__intro {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px;
+        padding: 20px;
+    }
+
+    .productivity__info {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 500px;
+        padding: 20px;
+    }
+
+    .productivity__title {
+        font-size: 22px;
+        max-width: none;
+    }
+
+    .productivity__reviews {
+        padding: 20px;
+    }
+
+    /* Access */
+
+    .access {
+        margin: 20px;
+        padding: 30px;
+    }
+
+    /* Footer */
+
+    .footer {
+        /* text-align: center; */
+    }
+
+    .footer__grid {
+        grid-template-columns: 1fr;
+        /* justify-items: center; */
+        gap: 10px;
+    }
+
+    .footer__list {
+        margin-top: 20px;
+        display: block;
+    }
+
+    .footer__socials {
+        justify-content: center;
+    }
+
+    .footer__social-link {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media all and (max-width: 550px) {
+
+
+    .access__form {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .access__email {
+        width: 100%;
+    }
+
+    .access__submit {
+        margin-top: 20px;
+        margin-left: 0;
+        width: 100%;
+    }
+
 }
