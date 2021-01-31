@@ -47,8 +47,14 @@ body {
 }
 
 .header__link {
-    color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 80%);
     text-decoration: none;
+    transition: all 200ms ease-out;
+}
+
+.header__link:hover {
+    color: hsl(0, 0%, 100%);
+    text-decoration: underline;
 }
 
 .header__hero {
@@ -79,6 +85,12 @@ body {
     background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
     border: 0;
     border-radius: 20px;
+    cursor: pointer;
+}
+
+.header__cta:hover {
+    background-color: hsl(176, 68%, 72%);
+    background-image: none;
 }
 
 /* Container */
@@ -166,8 +178,17 @@ body {
     border-bottom: 1px solid hsl(176, 68%, 64%);
 }
 
+.productivity__link:hover {
+    color:hsl(0, 0%, 100%);
+    border-bottom: 1px solid hsl(0, 0%, 100%);
+}
+
 .productivity__go {
     margin-left: 5px;
+}
+
+.productivity__link:hover .productivity__go {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(0%) hue-rotate(305deg) brightness(105%) contrast(106%);
 }
 
 .productivity__reviews {
@@ -273,6 +294,12 @@ body {
     background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
     border: 0;
     border-radius: 20px;
+    cursor: pointer;
+}
+
+.access__submit:hover {
+    background-color: hsl(176, 68%, 72%);
+    background-image: none;
 }
 
 /* Footer */
@@ -314,8 +341,12 @@ body {
 }
 
 .footer__link {
-    color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 80%);
     text-decoration: none;
+}
+
+.footer__link:hover {
+    color: hsl(0, 0%, 100%);
 }
 
 .footer__socials {
